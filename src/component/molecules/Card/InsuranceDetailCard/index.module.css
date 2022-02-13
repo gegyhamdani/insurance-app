@@ -1,0 +1,29 @@
+.insurance-detail-card__wrapper {
+  margin-left: 6px;
+}
+
+@media (min-width: 1200px) {
+  .insurance-detail-card__wrapper {
+    width: 819px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .insurance-detail-card__wrapper {
+    width: 679px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .insurance-detail-card__wrapper {
+    width: 525px;
+  }
+}
+
+@media (max-width: 768px) {
+  .insurance-detail-card__wrapper {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 6px;
+  }
+}

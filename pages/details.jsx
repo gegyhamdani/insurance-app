@@ -1,15 +1,15 @@
 import React from 'react';
 import Pages from '../src/component/templates/Pages';
 import Header from '../src/component/organism/Header/Header';
-import Insurance from '../src/component/organism/Insurance';
+import DetailInsurance from '../src/component/organism/DetailInsurance';
 
-const Home = () => {
+const details = () => {
   return (
     <Pages>
       <Header />
-      <Insurance />
+      <DetailInsurance />
     </Pages>
   );
 };
 
-export default Home;
+export default details;

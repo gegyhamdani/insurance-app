@@ -1,14 +1,16 @@
 import React from 'react';
-import TextButton from '../../../atoms/Button/TextButton';
+import { useRouter } from 'next/router';
 import BaseCard from '../BaseCard';
-
+import TextButton from '../../../atoms/Button/TextButton';
 import styles from './index.module.css';
 
 const InsuranceCard = () => {
+  const router = useRouter();
+
   return (
-    <BaseCard>
+    <BaseCard className={styles['insurance-card__wrapper']}>
       <div className={styles['insurance-card__title']}>
-        <h3>Title of product</h3>
+        <h2>Title of product</h2>
       </div>
       <div className={styles['insurance-card__content']}>
         <div
@@ -43,7 +45,7 @@ const InsuranceCard = () => {
           <TextButton
             text="Detail"
             className={`${styles['insurance-card__btn']}`}
-            onClick={() => {}}
+            onClick={() => router.push('/details')}
             label="detail"
           />
         </div>

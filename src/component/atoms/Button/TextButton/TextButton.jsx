@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import BaseButton from '../BaseButton';
 
 const TextButton = ({ text, className, onClick, label }) => {

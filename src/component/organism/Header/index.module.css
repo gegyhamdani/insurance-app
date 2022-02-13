@@ -1,4 +1,4 @@
-.wrapper {
+.header__wrapper {
   width: 100%;
   height: 65px;
   display: flex;
@@ -7,30 +7,36 @@
   background-color: #0070f3;
 }
 
-.title {
+.header__title {
   width: 100%;
-  padding: 0 20px;
 }
 
-.title h2 {
+.header__title h2 {
   color: #fff;
   margin: 0;
 }
 
 @media (min-width: 1200px) {
-  .title {
+  .header__title {
     width: 1170px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  .title {
+  .header__title {
     width: 970px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-  .title {
+  .header__title {
     width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__title {
+    width: 100%;
+    padding: 1em;
   }
 }

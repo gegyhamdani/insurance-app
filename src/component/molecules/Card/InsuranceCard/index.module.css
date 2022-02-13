@@ -1,3 +1,7 @@
+.insurance-card__wrapper {
+  margin: 1em 0;
+}
+
 .insurance-card__title {
   margin-bottom: 10px;
 }
@@ -60,7 +64,7 @@
   background-color: #0070f3;
   color: #fff;
 }
-  
+
 .insurance-card__btn:hover {
   background-color: #0058bd;
 }

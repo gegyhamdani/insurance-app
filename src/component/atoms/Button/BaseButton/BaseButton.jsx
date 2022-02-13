@@ -8,7 +8,7 @@ const BaseButton = ({ children, onClick, className, label }) => {
     <button
       type="button"
       onClick={onClick}
-      className={`${styles.button} ${className}`}
+      className={`${styles['base-button']} ${className}`}
       aria-label={label}
     >
       {children}

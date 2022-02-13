@@ -6,12 +6,13 @@ import {
   prizeRange,
   type
 } from '../../../../constant/filterInsurance';
+import styles from './index.module.css';
 
 const { Option } = Select;
 
 const FilterInsuranceCard = () => {
   return (
-    <BaseCard>
+    <BaseCard className={styles['filter-insurance-card__wrapper']}>
       <Select
         defaultValue={companyName[0]}
         style={{ width: 180 }}
@@ -25,7 +26,7 @@ const FilterInsuranceCard = () => {
           );
         })}
       </Select>
-      <Divider type="vertical" />
+      <Divider type="vertical" style={{ borderLeft: '2px solid #ddd;' }} />
       <Select
         defaultValue={prizeRange[0]}
         style={{ width: 200 }}
@@ -39,7 +40,7 @@ const FilterInsuranceCard = () => {
           );
         })}
       </Select>
-      <Divider type="vertical" />
+      <Divider type="vertical" style={{ borderLeft: '2px solid #ddd;' }} />
       <Select defaultValue={type[0]} style={{ width: 200 }} bordered={false}>
         {type.map((val, i) => {
           return (

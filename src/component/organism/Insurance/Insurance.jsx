@@ -5,8 +5,8 @@ import styles from './index.module.css';
 
 const Insurance = () => {
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.container}>
+    <div className={styles.insurance__wrapper}>
+      <div className={styles.insurance__container}>
         <FilterInsuranceCard />
         <InsuranceCard />
         <InsuranceCard />

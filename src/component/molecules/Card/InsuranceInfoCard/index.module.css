@@ -12,6 +12,9 @@
 
 .insurance-info-card__image {
   width: 100%;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 .insurance-info-card__image img {

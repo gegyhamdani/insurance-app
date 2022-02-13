@@ -14,10 +14,9 @@
 
 .insurance-card__content {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  height: 100px;
+  height: 100%;
 }
 
 .insurance-card__content--row {
@@ -67,4 +66,31 @@
 
 .insurance-card__btn:hover {
   background-color: #0058bd;
+}
+
+@media (max-width: 768px) {
+  .insurance-card__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .insurance-card__title {
+    text-align: center;
+  }
+  .insurance-card__content--row {
+    padding: 0;
+    margin: 10px;
+  }
+  .insurance-card__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .insurance-card__content-detail {
+    border-top: 2px solid #ddd;
+    padding: 24px 0;
+    border-bottom: 2px solid #ddd;
+    width: 100%;
+  }
+  .insurance-card__btn {
+    width: 240px;
+  }
 }

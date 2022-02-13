@@ -1,5 +1,5 @@
 import React from 'react';
-import { Select, Divider, Input } from 'antd';
+import { Select, Input } from 'antd';
 import BaseCard from '../BaseCard';
 import {
   companyName,
@@ -17,8 +17,8 @@ const FilterInsuranceCard = () => {
         <div className={styles['filter-insurance-card__content--select']}>
           <Select
             defaultValue={companyName[0]}
-            style={{ width: 180 }}
             bordered={false}
+            className={styles['filter-insurance-card__content--select--option']}
           >
             {companyName.map((val, i) => {
               return (
@@ -28,11 +28,10 @@ const FilterInsuranceCard = () => {
               );
             })}
           </Select>
-          <Divider type="vertical" style={{ borderLeft: '2px solid #ddd' }} />
           <Select
             defaultValue={prizeRange[0]}
-            style={{ width: 200 }}
             bordered={false}
+            className={styles['filter-insurance-card__content--select--option']}
           >
             {prizeRange.map((val, i) => {
               return (
@@ -42,11 +41,10 @@ const FilterInsuranceCard = () => {
               );
             })}
           </Select>
-          <Divider type="vertical" style={{ borderLeft: '2px solid #ddd' }} />
           <Select
             defaultValue={type[0]}
-            style={{ width: 200 }}
             bordered={false}
+            className={styles['filter-insurance-card__content--select--option']}
           >
             {type.map((val, i) => {
               return (

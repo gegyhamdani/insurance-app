@@ -8,3 +8,34 @@
   flex-direction: row;
   width: 100%;
 }
+
+.filter-insurance-card__content--select--option {
+  border-left: 2px solid #ddd;
+}
+
+.filter-insurance-card__content--select--option:nth-child(1) {
+  border-left: none;
+}
+
+@media (max-width: 768px) {
+  .filter-insurance-card__content--select {
+    display: flex;
+    flex-direction: column;
+  }
+  .filter-insurance-card__container {
+    flex-direction: column;
+    justify-content: baseline;
+  }
+  .filter-insurance-card__content--select--option {
+    width: 100%;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #ddd;
+    border-left: none;
+  }
+  .filter-insurance-card__content--select--option:nth-last-child(1) {
+    border: none;
+  }
+  .filter-insurance-card__content--search {
+    margin-top: 1em;
+  }
+}

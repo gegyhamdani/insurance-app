@@ -34,10 +34,6 @@ const InsuranceCard = () => {
             <span className="icon--check" />
             Product Specification
           </p>
-          <p>
-            <span className="icon--check" />
-            Product Specification
-          </p>
         </div>
         <div
           className={`${styles['insurance-card__content--row']} ${styles['insurance-card__content-action']}`}

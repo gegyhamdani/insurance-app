@@ -1,5 +1,4 @@
 import React from 'react';
-import { Divider } from 'antd';
 import BaseCard from '../BaseCard';
 import TextButton from '../../../atoms/Button/TextButton';
 import styles from './index.module.css';
@@ -11,7 +10,6 @@ const InsuranceInfoCard = () => {
         <div className={styles['insurance-info-card__image']}>
           <img src="/image-example.png" alt="product" />
         </div>
-        <Divider style={{ borderTop: '1px solid #ddd;' }} />
         <TextButton
           text="Buy Now"
           className={`${styles['insurance-info-card__btn']}`}

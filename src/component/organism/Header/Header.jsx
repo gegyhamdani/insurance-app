@@ -5,11 +5,11 @@ import styles from './index.module.css';
 const Header = () => {
   return (
     <>
-      <div className={styles.wrapper}>
+      <header className={styles.wrapper}>
         <div className={styles.title}>
           <h2>Insurance App</h2>
         </div>
-      </div>
+      </header>
     </>
   );
 };

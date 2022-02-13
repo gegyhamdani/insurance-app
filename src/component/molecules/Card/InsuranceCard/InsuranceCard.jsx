@@ -1,5 +1,5 @@
 import React from 'react';
-import ButtonText from '../../../atoms/Button/ButtonText';
+import TextButton from '../../../atoms/Button/TextButton';
 import BaseCard from '../BaseCard';
 
 import styles from './index.module.css';
@@ -26,25 +26,25 @@ const InsuranceCard = () => {
         >
           <p>
             <span className="icon--check" />
-            Produk Specification
+            Product Specification
           </p>
           <p>
             <span className="icon--check" />
-            Produk Specification
+            Product Specification
           </p>
           <p>
             <span className="icon--check" />
-            Produk Specification
+            Product Specification
           </p>
         </div>
         <div
           className={`${styles['insurance-card__content--row']} ${styles['insurance-card__content-action']}`}
         >
-          <ButtonText
-            text="Beli Sekarang"
+          <TextButton
+            text="Detail"
             className={`${styles['insurance-card__btn']}`}
             onClick={() => {}}
-            label="Beli"
+            label="detail"
           />
         </div>
       </div>

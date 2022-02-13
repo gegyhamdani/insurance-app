@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import styles from './index.module.css';
 
-const ButtonBase = ({ children, onClick, className, label }) => {
+const BaseButton = ({ children, onClick, className, label }) => {
   return (
     <button
       type="button"
@@ -16,7 +16,7 @@ const ButtonBase = ({ children, onClick, className, label }) => {
   );
 };
 
-ButtonBase.propTypes = {
+BaseButton.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.element),
     PropTypes.element,
@@ -27,11 +27,11 @@ ButtonBase.propTypes = {
   label: PropTypes.string
 };
 
-ButtonBase.defaultProps = {
+BaseButton.defaultProps = {
   children: null,
   className: '',
   onClick: () => {},
   label: 'Base'
 };
 
-export default ButtonBase;
+export default BaseButton;

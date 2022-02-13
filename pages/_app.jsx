@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../styles/globals.css';
+import 'antd/dist/antd.css';
 
 const MyApp = ({ Component, pageProps }) => {
   // eslint-disable-next-line react/jsx-props-no-spreading

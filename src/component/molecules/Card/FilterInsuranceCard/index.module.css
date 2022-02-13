@@ -1,3 +1,10 @@
 .filter-insurance-card__wrapper {
   margin: 1em 0;
 }
+
+.filter-insurance-card__container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}

@@ -8,12 +8,8 @@ export const companyName = [
     name: 'all'
   },
   {
-    label: 'AXA',
+    label: 'Axa',
     name: 'axa'
-  },
-  {
-    label: 'Adira',
-    name: 'adira'
   },
   {
     label: 'Allianz',
@@ -58,7 +54,7 @@ export const type = [
     name: 'health'
   },
   {
-    label: 'Vehicle',
-    name: 'vehicle'
+    label: 'Life',
+    name: 'life'
   }
 ];

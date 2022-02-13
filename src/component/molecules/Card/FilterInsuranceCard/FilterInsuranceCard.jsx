@@ -26,7 +26,7 @@ const FilterInsuranceCard = () => {
           );
         })}
       </Select>
-      <Divider type="vertical" style={{ borderLeft: '2px solid #ddd;' }} />
+      <Divider type="vertical" style={{ borderLeft: '2px solid #ddd' }} />
       <Select
         defaultValue={prizeRange[0]}
         style={{ width: 200 }}
@@ -40,7 +40,7 @@ const FilterInsuranceCard = () => {
           );
         })}
       </Select>
-      <Divider type="vertical" style={{ borderLeft: '2px solid #ddd;' }} />
+      <Divider type="vertical" style={{ borderLeft: '2px solid #ddd' }} />
       <Select defaultValue={type[0]} style={{ width: 200 }} bordered={false}>
         {type.map((val, i) => {
           return (

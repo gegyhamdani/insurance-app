@@ -1,11 +1,19 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
+import Head from 'next/head';
 import PropTypes from 'prop-types';
 import '../styles/globals.css';
 import 'antd/dist/antd.css';
 
 const MyApp = ({ Component, pageProps }) => {
-  // eslint-disable-next-line react/jsx-props-no-spreading
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Head>
+        <title>Insurance Web App</title>
+      </Head>
+      <Component {...pageProps} />
+    </>
+  );
 };
 
 MyApp.propTypes = {

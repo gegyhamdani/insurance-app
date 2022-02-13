@@ -11,8 +11,6 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <title>Insurance App</title>
-
           <meta name="description" content="Insurance" />
 
           <link rel="icon" href="/favicon.ico" />

@@ -1,0 +1,15 @@
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  background-color: #fff;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.15s ease;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  border-color: rgb(185, 184, 184);
+}

@@ -1,0 +1,66 @@
+.insurance-card__title {
+  margin-bottom: 10px;
+}
+
+.insurance-card__title h3 {
+  color: #464646;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.insurance-card__content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  height: 100px;
+}
+
+.insurance-card__content--row {
+  flex: 1 1 15%;
+  padding: 0 15px;
+}
+
+.insurance-card__content--row:nth-child(1) {
+  padding-left: 0;
+}
+
+.insurance-card__content p {
+  margin: 0;
+}
+
+.insurance-card__content-image {
+  height: 100%;
+}
+
+.insurance-card__content-image img {
+  height: 100%;
+}
+
+.insurance-card__content-price {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.insurance-card__content-detail span {
+  padding-right: 6px;
+}
+
+.insurance-card__content-detail p {
+  padding-bottom: 6px;
+}
+
+.insurance-card__content-action {
+  text-align: center;
+}
+
+.insurance-card__btn {
+  width: 150px;
+  height: 40px;
+  background-color: #0070f3;
+  color: #fff;
+}
+  
+.insurance-card__btn:hover {
+  background-color: #0058bd;
+}

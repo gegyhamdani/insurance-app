@@ -4,11 +4,16 @@ module.exports = {
     es6: true,
   },
   extends: [
-    "eslint:recommended",
-    "plugin:react/recommended",
     "airbnb",
     "prettier",
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended",
   ],
+  globals: {
+    Atomics: "readonly",
+    SharedArrayBuffer: "readonly",
+  },
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -18,8 +23,9 @@ module.exports = {
   },
   plugins: ["react", "prettier", "react-hooks"],
   rules: {
-    "prettier/prettier": ["error"],
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
+    "prettier/prettier": [
+      "error",
+      { singleQuote: true, parser: "flow", endOfLine: "auto" },
+    ],
   },
 };

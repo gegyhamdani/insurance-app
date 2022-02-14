@@ -1,4 +1,12 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Insurance App
+
+an Insurance catalog list page, where users can view various insurances and able to search and curate insurance(manage insurance product). And an insurance details page that contains all the details about insurance.
+
+Url: https://insurance-app-zeta.vercel.app/
+
+<br/>
+
+A project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 

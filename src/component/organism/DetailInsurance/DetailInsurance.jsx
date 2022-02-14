@@ -24,7 +24,10 @@ const DetailInsurance = () => {
         />
         <h1>{insuranceData.name}</h1>
         <div className={styles['detail-insurance__content']}>
-          <InsuranceInfoCard company={insuranceData.company} />
+          <InsuranceInfoCard
+            company={insuranceData.company}
+            price={insuranceData.price}
+          />
           <InsuranceDetailCard
             description={insuranceData.description}
             benefit={insuranceData.benefit}

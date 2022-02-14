@@ -1,6 +1,10 @@
 import insuranceMockData from '../../../src/constant/mockdata';
 
-export default function insuranceHandler({ query: { id } }, res) {
+export default function insuranceHandler(req, res) {
+  const {
+    query: { id }
+  } = req;
+
   const filtered = insuranceMockData.filter(val => val.id === id);
 
   if (filtered.length > 0) {

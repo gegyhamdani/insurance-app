@@ -21,25 +21,6 @@ export const companyName = [
   }
 ];
 
-export const prizeRange = [
-  {
-    label: 'Choose Prize Range',
-    name: 'select'
-  },
-  {
-    label: 'All',
-    name: 'all'
-  },
-  {
-    label: 'Less than Rp1.000.000',
-    name: 'cheap'
-  },
-  {
-    label: 'More than Rp1.000.000',
-    name: 'expensive'
-  }
-];
-
 export const type = [
   {
     label: 'Choose Type',
@@ -58,3 +39,9 @@ export const type = [
     name: 'life'
   }
 ];
+
+export const filterOptionList = {
+  name: '',
+  company: '',
+  type: ''
+};

@@ -43,7 +43,6 @@ const InsuranceCard = ({ id, name, company, price, feature }) => {
           <TextButton
             text="Detail"
             className={`${styles['insurance-card__btn']}`}
-            // onClick={() => router.push('/details')}
             onClick={() => {
               router.push({
                 pathname: '/insurance/[id]',
@@ -63,7 +62,7 @@ InsuranceCard.propTypes = {
   name: PropTypes.string,
   company: PropTypes.string,
   price: PropTypes.number,
-  feature: PropTypes.arrayOf(PropTypes.shape({}))
+  feature: PropTypes.arrayOf(PropTypes.string)
 };
 
 InsuranceCard.defaultProps = {

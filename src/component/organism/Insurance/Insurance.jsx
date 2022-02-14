@@ -6,24 +6,45 @@ import InsuranceCard from '../../molecules/Card/InsuranceCard';
 import styles from './index.module.css';
 
 const Insurance = () => {
-  const { isLoading, insuranceData } = useInsurance();
-
-  if (isLoading) return <Spinner />;
+  const {
+    isLoading,
+    insuranceData,
+    filterOption,
+    handleChangeName,
+    handleSearchName,
+    handleChangeCompanyName,
+    handleChangePrizeRange,
+    handleChangeType
+  } = useInsurance();
 
   return (
     <div className={styles.insurance__wrapper}>
       <div className={styles.insurance__container}>
-        <FilterInsuranceCard />
-        {insuranceData.map((val, i) => (
-          <InsuranceCard
-            key={i.toString()}
-            id={val.id}
-            name={val.name}
-            company={val.company}
-            price={val.price}
-            feature={val.feature}
-          />
-        ))}
+        <FilterInsuranceCard
+          insuranceName={filterOption.name}
+          onChangeName={handleChangeName}
+          onSearchName={handleSearchName}
+          onChangeCompanyName={handleChangeCompanyName}
+          onChangePrizeRange={handleChangePrizeRange}
+          onChangeType={handleChangeType}
+        />
+        {isLoading ? (
+          <Spinner />
+        ) : (
+          insuranceData.map((val, i) => {
+            return (
+              <InsuranceCard
+                key={i.toString()}
+                id={val.id}
+                name={val.name}
+                company={val.company}
+                price={val.price}
+                feature={val.feature}
+              />
+            );
+          })
+        )}
+        {}
       </div>
     </div>
   );

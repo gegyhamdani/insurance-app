@@ -20,7 +20,7 @@ const InsuranceDetailCard = ({ description, benefit }) => {
 
 InsuranceDetailCard.propTypes = {
   description: PropTypes.string,
-  benefit: PropTypes.arrayOf(PropTypes.shape({}))
+  benefit: PropTypes.arrayOf(PropTypes.string)
 };
 
 InsuranceDetailCard.defaultProps = {

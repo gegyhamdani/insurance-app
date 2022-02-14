@@ -11,6 +11,7 @@
 
 .filter-insurance-card__content--select--option {
   border-left: 2px solid #ddd;
+  width: 200px;
 }
 
 .filter-insurance-card__content--select--option:nth-child(1) {
